@@ -1,0 +1,66 @@
+******************************************
+Variables potentielles
+----------------------
+nbSecret : secret par machine
+nbSaisi : tapé par user
+nbEssais : compteur de coups d'essais (OPTIONNEL !)
+rejouer : réponse du user (vrai/faux)
+
+1. Générer un nb aléatoire entre 1 et 100
+2. Afficher le nombre secret (triche)
+3. Proposer au user de saisir un nombre
+4. Tant que nb saisi différent nb généré
+4a. si nb saisi > nb secret alors afficher "C'est moins"
+4b. si nb saisi < nb secret alors afficher "C'est plus"
+4c. si nb saisi = nb secret alors afficher "C'est gagné"
+5. Proposer au user de rejouer
+******************************************
+
+1   FONCTIONS_UTILISEES
+2   VARIABLES
+3     nbSecret EST_DU_TYPE NOMBRE
+4     nbSaisi EST_DU_TYPE NOMBRE
+5     nbEssais EST_DU_TYPE NOMBRE
+6     rejouer EST_DU_TYPE NOMBRE
+7     msg EST_DU_TYPE CHAINE
+8   DEBUT_ALGORITHME
+9     //Initialise "rejouer" à VRAI (1)
+10    rejouer PREND_LA_VALEUR 1
+11    //Démarre le jeu
+12    TANT_QUE (rejouer==1) FAIRE
+13      DEBUT_TANT_QUE
+14      //Initialise les variables
+15      nbSecret PREND_LA_VALEUR ALGOBOX_ALEA_ENT(1,100)
+16      nbSaisi PREND_LA_VALEUR 0
+17      nbEssais PREND_LA_VALEUR 0
+18      //AFFICHER* nbSecret
+19      //Tant que nb saisi diff. de nb secret
+20      TANT_QUE (nbSaisi!=nbSecret) FAIRE
+21        DEBUT_TANT_QUE
+22        //Demande au joueur de saisir un nb
+23        AFFICHER "Saisir un nombre entre 1 et 100 :"
+24        LIRE nbSaisi
+25        nbEssais PREND_LA_VALEUR nbEssais + 1
+26        //Compare nb saisi et nb secret
+27        SI ((nbSaisi<nbSecret)) ALORS
+28          DEBUT_SI
+29          AFFICHER "C'est plus !"
+30          FIN_SI
+31          SINON
+32            DEBUT_SINON
+33            SI ((nbSaisi>nbSecret)) ALORS
+34              DEBUT_SI
+35              AFFICHER "C'est moins !"
+36              FIN_SI
+37              SINON
+38                DEBUT_SINON
+39                msg PREND_LA_VALEUR "Bravo, c'est gagné en " + nbEssais + " essais !"
+40                AFFICHER msg
+41                FIN_SINON
+42            FIN_SINON
+43        FIN_TANT_QUE
+44      //Demande au joueur s'il veut rejouer
+45      AFFICHER "Rejouer (1 oui / 0 non) ?"
+46      LIRE rejouer
+47      FIN_TANT_QUE
+48  FIN_ALGORITHME
