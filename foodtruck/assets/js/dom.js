@@ -11,8 +11,10 @@ function generateDoc() {
     let h1, h2, ul, li, text, attr;
 
     // H1
-    h1 = document.createElement('h1');
-    text = document.createTextNode('Riyad Foodtruck !');
+    h1 = document.createElement('h1'); // element
+    h1.setAttribute('style', 'color:#00f;text-shadow:0 0 10px #999'); // attribute
+    h1.style.fontFamily = 'Verdana, Arial, sans-serif';
+    text = document.createTextNode('Riyad Foodtruck !'); //text
     h1.appendChild(text);
     document.body.appendChild(h1);
 
