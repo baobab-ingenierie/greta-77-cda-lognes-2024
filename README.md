@@ -3,7 +3,7 @@
 ![Logo GRETA](https://www.forpro-creteil.org/images/greta77.png)
 
 ## Description
-Projet "fil rouge" réalisé du **27 novembre 2023 au 5 janvier 2024** avec l'équipe des apprenants du parcours CDA sur le site de l'espace Diderot à Lognes.
+Projet "fil rouge" réalisé du **6 novembre 2023 au 20 juin 2024** avec l'équipe des apprenants du parcours CDA sur le site de l'espace Diderot à Lognes.
 
 ## Points abordés
 - [ ] CP1 Installer et configurer son environnement de travail en fonction du projet
