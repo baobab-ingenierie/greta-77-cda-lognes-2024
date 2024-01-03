@@ -1,3 +1,11 @@
+// Au survol du titre
+document.querySelector('#title').addEventListener(
+    'mouseover',
+    function () {
+        alert('Bonne année');
+    }
+);
+
 // Après chargement de la page
 document.addEventListener(
     'DOMContentLoaded',
