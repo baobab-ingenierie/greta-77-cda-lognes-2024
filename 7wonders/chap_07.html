@@ -1,0 +1,63 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Cours jQuery</title>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/chap_07.js"></script>
+<style type="text/css">
+body {
+	margin: 0px;
+	padding: 10px;
+	font: 80% Verdana, Arial, sans-serif;
+}
+
+h1 {
+	clear: both;
+	font-size: 160%;
+	font-weight: normal;
+	margin: 0px;
+	padding-top: 10px;
+	padding-bottom: 15px;
+}
+
+#galerie {
+	width: 100%;
+	overflow: hidden;
+}
+
+#galerie a {
+	position: relative;
+	float: left;
+	margin: 5px;
+}
+
+#galerie a span {
+	background-image: url(pics/loupe.png);
+	background-repeat: no-repeat;
+	width: 30px;
+	height: 30px;
+	display: none;
+	position: absolute;
+	left: 15px;
+	top: 15px;
+}
+
+#galerie img {
+	border: solid 1px black;
+	padding: 5px;
+}
+</style>
+</head>
+<body>
+	<h1>Les Pyramides d'Egypte</h1>
+	<div id="galerie">
+		<a href="pics/pyramides1.jpg"><img src="pics/pyramides1_pt.jpg"
+			alt="" /> </a> <a href="pics/pyramides2.jpg"><img
+			src="pics/pyramides2_pt.jpg" alt="" /> </a> <a
+			href="pics/pyramides3.jpg"><img src="pics/pyramides3_pt.jpg"
+			alt="" /> </a>
+	</div>
+</body>
+</html>

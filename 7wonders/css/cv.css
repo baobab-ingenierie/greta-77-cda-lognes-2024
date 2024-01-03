@@ -1,0 +1,17 @@
+.titreCV {
+	font-size: 30px;
+	color: #555555;
+	margin-top: 60px;
+	margin-left: 190px;
+}
+
+.titreSection {
+	font-weight: bold;
+	color: #555555;
+	margin-top: 10px;
+}
+
+.dateCV {
+	float: left;
+	margin-right: 15px;
+}

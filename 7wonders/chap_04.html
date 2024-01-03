@@ -1,0 +1,94 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf8" />
+<title>Cours jQuery</title>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/chap_04a.js"></script>
+<script type="text/javascript" src="js/chap_04b.js"></script>
+<style type="text/css">
+p {
+	font-size: 1em;
+}
+
+body {
+	margin: 0px;
+	padding: 10px;
+	font: 80% Verdana, Arial, sans-serif;
+}
+
+h1 {
+	clear: both;
+	font-size: 160%;
+	font-weight: normal;
+	margin: 0px;
+	padding-top: 10px;
+	padding-bottom: 15px;
+}
+
+p a {
+	text-decoration: none;
+	border-bottom: 1px dashed black;
+	color: black;
+}
+
+li a {
+	text-decoration: none;
+	color: black;
+}
+
+img {
+	border: 1px solid black;
+}
+
+ul,li {
+	margin: 0px;
+	padding: 0px;
+}
+
+li {
+	list-style: none;
+	float: left;
+	display: inline;
+	margin-right: 10px;
+}
+
+#zoom {
+	position: absolute;
+	border: 1px solid #333;
+	background: #333;
+	padding: 3px;
+	display: none;
+	color: #fff;
+}
+</style>
+</head>
+<body>
+	<h1>Les Pyramides d'Egypte</h1>
+	<input type="button" value="Plus grand" id="plus" />
+	<input type="button" value="Plus petit" id="moins" />
+	<p>
+		Construites par les Pharaons Chéops, Chéphren et Mykérinos vers 2580
+		av. J.C. pour servir de sépultures royales, elles se situent aux
+		portes de la ville du Caire à Gizeh (Egypte) et constituent l'Unique
+		merveille du monde que l'on peut encore voir aujourd'hui : <br />-
+		Cheops (hauteur 137,5 m. autrefois 146,5 m avec son revêtement de
+		calcaire disparu, base 5,05 ha, volume 2,5 millions de m3, angle
+		parfait de 52°, 2,5 millions blocs de pierre) <br />- Chéphren
+		(hauteur 136,5 m.) <br />- Mykérinos (hauteur 66 m.)
+	</p>
+	<ul>
+		<li><a href="pics/pyramides1.jpg" class="zoom"
+			title="Pyramide à faces lisses de Gizeh" /><img
+			src="pics/pyramides1_pt.jpg" /></li>
+		<li><a href="pics/pyramides2.jpg" class="zoom"
+			title="Pyramide de Khéphren" /><img src="pics/pyramides2_pt.jpg" />
+		</li>
+		<li><a href="pics/pyramides3.jpg" class="zoom"
+			title="Pyramide de Khéops" /><img src="pics/pyramides3_pt.jpg" /></li>
+	</ul>
+
+	<br />
+	<br />
+</body>
+</html>

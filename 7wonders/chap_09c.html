@@ -1,0 +1,141 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Cours jQuery</title>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/chap_09c.js"></script>
+<style type="text/css">
+body {
+	padding: 0px;
+	margin: 15px;
+	font: 90% verdana, arial, sans-serif;
+}
+
+h1 {
+	clear: both;
+	font-size: 160%;
+	font-weight: normal;
+	margin: 0px;
+	padding-top: 10px;
+	padding-bottom: 15px;
+}
+
+ul.navigation {
+	padding: 0px;
+	list-style-type: none;
+	line-height: 40px;
+	overflow: hidden;
+}
+
+ul.navigation li {
+	display: inline;
+}
+
+ul.navigation li a {
+	padding-top: 3px;
+	padding-bottom: 3px;
+	background-color: #ccc;
+	padding-left: 5px;
+	padding-right: 5px;
+	color: #000;
+	text-decoration: none;
+	line-height: 27px;
+	overflow: hidden;
+}
+
+ul.navigation li a.selected {
+	background-color: Gold;
+	border: 2px solid black;
+	color: #000;
+	padding-top: 7px;
+}
+
+ul.navigation li a:hover {
+	background-color: Gold;
+	color: #000;
+	padding-top: 7px;
+	border: 1px solid black;
+}
+
+div.menu>div {
+	padding: 5px;
+	margin-top: 3px;
+}
+
+#un,#deux,#trois,#quatre,#cinq,#six,#sept {
+	margin-top: 25px;
+	text-align: justify;
+	border: 1px solid black;
+	padding-left: 7px;
+	padding-right: 7px;
+}
+</style>
+</head>
+<body>
+	<h1>Les 7 merveilles du monde</h1>
+	<div class="menu">
+		<ul class="navigation">
+			<li><a href="#un">1ère merveille</a></li>
+			<li><a href="#deux">2ème merveille</a></li>
+			<li><a href="#trois">3ème merveille</a></li>
+			<li><a href="#quatre">4ème merveille</a></li>
+			<li><a href="#cinq">5ème merveille</a></li>
+			<li><a href="#six">6ème merveille</a></li>
+			<li><a href="#sept">7ème merveille</a></li>
+		</ul>
+		<div id="un">
+			<h3>Pyramide de Khéops</h3>
+			<p>Aux portes de la ville du Caire, en Egypte, se dresse la plus
+				ancienne et la seule survivante des sept merveilles du monde
+				antique: il s'agit de la pyramide de Khéops située à Gizeh près de
+				deux autres plus petites : Khephren et Mykérinos.</p>
+		</div>
+		<div id="deux">
+			<h3>Jardins suspendus de Babylone</h3>
+			<p>Les jardins suspendus de Babylone demeurent en eux-mêmes une
+				merveille bien mystérieuse. En effet, aucun texte babylonien les
+				citant n'a été retrouvé. On ignore même la date de destruction.
+				Peut-être est ce là le fruit de l'imagination des Grecs ?</p>
+		</div>
+		<div id="trois">
+			<h3>Statue chryséléphantine de Zeus</h3>
+			<p>Cette statue colossale représentait le dieu grec du Ciel :
+				Zeus. Elle fut commandée en 450 avant J.C. au sculpteur athénien
+				Phidias par les habitants d'Olympie qui souhaitaient orner le temple
+				de la vieille ville.</p>
+		</div>
+		<div id="quatre">
+			<h3>Mausolée d'Halicarnasse</h3>
+			<p>Il s'agit d'un tombeau monumental situé au sud-ouest de la
+				Turquie dans la ville d'Halicarnasse (actuellement Bodrum) où
+				reposait le roi de Carie nommé Mausole. Il était aussi satrape1 du
+				roi de Perse, à qui la Carie appartenait.</p>
+		</div>
+		<div id="cinq">
+			<h3>Temple d'Artémis</h3>
+			<p>Le temple d'Artémis à Ephèse servait à la fois de place de
+				marché et de lieu de culte de la déesse Artémis qui était la
+				divinité de la fécondité, de la terre, de la lune et des animaux. Du
+				temps des Grecs, elle était très vénérée.</p>
+		</div>
+		<div id="six">
+			<h3>Colosse de Rhodes</h3>
+			<p>Cette statue de bronze représentant Hélios, dieu grec du
+				Soleil, fut édifiée par le sculpteur Charès de Lindos pour
+				commémorer la levée du siège de la ville qui a eu lieu en 305 avant
+				J.C. et la victoire des Rhodiens contre le chef macédonien Démétrios
+				Poliorcète.</p>
+		</div>
+		<div id="sept">
+			<h3>Phare d'Alexandrie</h3>
+			<p>Il a été localisé entre 1994 et 1996 dans le port même
+				d'Alexandrie par l'archéologue français Jean-Yves Empereur. C'est
+				l'un des monuments antiques les plus connus et les plus souvent
+				représentés car ce fut l'un des premiers phares. On a en effet
+				retrouvé jusqu'en Afghanistan des objets souvenirs avec des
+				reproductions de l'image du phare.</p>
+		</div>
+	</div>
+</body>
+</html>

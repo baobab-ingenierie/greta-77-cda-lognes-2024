@@ -1,0 +1,79 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Cours jQuery</title>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/jquery.dropshadow.js"></script>
+<script type="text/javascript" src="js/jquery.tablesorter.js"></script>
+<script type="text/javascript" src="js/jquery.infobulle.js"></script>
+<!--[if IE]><script type="text/javascript" src="js/excanvas.compiled.js"></script><![endif]-->
+<script type="text/javascript" src="js/visualize.jQuery.js"></script>
+<script type="text/javascript" src="js/chap_13.js"></script>
+<link type="text/css" rel="stylesheet" href="css/jquery.tablesorter.css" />
+<link type="text/css" rel="stylesheet" href="css/visualize.jQuery.css" />
+<style type="text/css">
+* {
+	font-family: Verdana, Arial;
+}
+
+.infobulle {
+	width: 150px;
+	padding: 3px;
+	background-color: LemonChiffon;
+	border: black 1px solid;
+	color: black;
+}
+
+a {
+	color: black
+}
+</style>
+</head>
+<body>
+	<h1>
+		<span>Les</span> <span>7</span> <span>merveilles</span> <span>du</span>
+		<span>monde</span>
+	</h1>
+	<table cellspacing="1" class="tablesorter">
+		<thead>
+			<tr>
+				<th>Pays</th>
+				<th>Total</th>
+				<th>Drapeau</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<th><a href="pics/egypte.jpg" target="_blank" rel="Carte de l'Egypte ancienne" class="info">Egypte</a>
+				</th>
+				<td>2</td>
+				<td><img src="pics/eg.gif" height="16" width="24" /></td>
+			</tr>
+			<tr>
+				<th><a href="pics/grece.gif" target="_blank" rel="Carte de la Grèce antique" class="info">Grèce</a>
+				</th>
+				<td>2</td>
+				<td><img src="pics/gr.gif" height="16" width="24" />
+				</td>
+			</tr>
+			<tr>
+				<th><a href="pics/mesopotamie.gif" target="_blank" rel="Carte de la Mésopotamie" class="info">Irak</a>
+				</th>
+				<td>1</td>
+				<td><img src="pics/iq.gif" height="16" width="24" />
+				</td>
+			</tr>
+			<tr>
+				<th><a href="pics/asie_mineure.gif" target="_blank" rel="Carte de l'Asie mineure" class="info">Turquie</a>
+				</th>
+				<td>2</td>
+				<td><img src="pics/tr.gif" height="16" width="24" />
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<br />
+	<br />
+</body>
+</html>
