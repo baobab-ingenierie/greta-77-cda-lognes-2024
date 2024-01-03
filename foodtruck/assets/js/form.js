@@ -21,7 +21,7 @@ document.querySelector('#title').addEventListener(
 document.querySelector('#salary').addEventListener(
     'input',
     function (e) {
-        document.querySelector('#salary_val').textContent = e.target.value + '€';
+        document.querySelector('#salary_val').textContent = e.target.value + ' €';
     }
 );
 
@@ -34,6 +34,29 @@ document.querySelector('#salary').addEventListener(
 function getAge(date1, date2 = new Date()) {
     return Math.floor((new Date(date2).getTime() - new Date(date1).getTime()) / 1000 / 60 / 60 / 24 / 365.25);
 }
+
+// Au changement de la DDN
+document.querySelector('#dob').addEventListener(
+    'change',
+    function (e) {
+        document.querySelector('#age').textContent = getAge(e.target.value) + (getAge(e.target.value) > 1 ? ' ans' : ' an');
+    }
+);
+
+// A l'envoi du formulaire
+document.querySelector('#form_apply').addEventListener(
+    'submit',
+    function (e) {
+        let controls = document.querySelectorAll('#form_apply input, #form_apply select');
+        console.log(controls);
+        controls.forEach(control => {
+            if (!control.value){
+                alert(control.name + ' est vide !');
+                e.preventDefault(); // arrête le comportement du submit
+            }
+        });
+    }
+);
 
 // Après chargement de la page
 document.addEventListener(
@@ -58,6 +81,32 @@ document.addEventListener(
                             document.querySelector('#dept').appendChild(option);
                         }
                     );
+                }
+            }
+        );
+    }
+);
+
+// Au changement de département
+document.querySelector('#dept').addEventListener(
+    'change',
+    function (e) {
+        let xhr = new XMLHttpRequest();
+        xhr.open('get', 'https://geo.api.gouv.fr/departements/' + e.target.value + '/communes');
+        xhr.send();
+        xhr.addEventListener(
+            'readystatechange',
+            function () {
+                if (xhr.readyState === 4 && (xhr.status === 200 || xhr.status === 0)) {
+                    let data = JSON.parse(xhr.responseText), select = document.querySelector('#cities'), option;
+                    console.log(data);
+                    select.innerHTML = '';
+                    data.forEach(city => {
+                        option = document.createElement('option');
+                        option.value = city.code;
+                        option.textContent = city.nom;
+                        select.appendChild(option);
+                    });
                 }
             }
         );
