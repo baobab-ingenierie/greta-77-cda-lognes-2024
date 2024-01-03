@@ -1,10 +1,39 @@
 // Au survol du titre
 document.querySelector('#title').addEventListener(
-    'mouseover',
+    'mouseenter',
     function () {
-        alert('Bonne année');
+        // this.style = 'font-weight:bold';
+        this.style.fontWeight = 'bold';
+        this.textContent = 'Application form';
     }
 );
+
+// En sortant du titre (avec fonctions fléchées)
+document.querySelector('#title').addEventListener(
+    'mouseleave',
+    (e) => {
+        e.target.style.fontWeight = '';
+        e.target.textContent = 'Formulaire de candidature';
+    }
+);
+
+// Changement de salaire
+document.querySelector('#salary').addEventListener(
+    'input',
+    function (e) {
+        document.querySelector('#salary_val').textContent = e.target.value + '€';
+    }
+);
+
+/**
+ * Fonction getAge()
+ * @param {string} date1 
+ * @param {string} date2 (par défaut aujourd'hui)
+ * @returns {int}
+ */
+function getAge(date1, date2 = new Date()) {
+    return Math.floor((new Date(date2).getTime() - new Date(date1).getTime()) / 1000 / 60 / 60 / 24 / 365.25);
+}
 
 // Après chargement de la page
 document.addEventListener(
