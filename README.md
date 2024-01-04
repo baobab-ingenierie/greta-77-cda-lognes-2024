@@ -24,3 +24,10 @@ Projet "fil rouge" réalisé du **6 novembre 2023 au 20 juin 2024** avec l'équi
 + JavaScript
 + Bootstrap
 + jQuery
+
+## Pistes à explorer
+
+### API REST
+
+(https://waytolearnx.com/2019/07/creer-et-utiliser-une-api-rest-en-php.html?utm_content=cmp-true)
+(https://nouvelle-techno.fr/articles/live-coding-creer-une-api-rest)
